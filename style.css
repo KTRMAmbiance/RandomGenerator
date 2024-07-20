@@ -1,0 +1,50 @@
+@font-face {
+font-family: Handwritten;
+src: url(KTRM-HW-1.3.ttf);
+}
+
+@font-face {
+font-family: UI;
+src: url(KTRM-PT-1.1.ttf);
+}
+
+body {
+text-align: center;
+background-image: radial-gradient(#cef, #acf);
+background-attachment: fixed;
+}
+
+#pushbutton {
+background-image: radial-gradient(#CCC, #AAA);
+color: rgba(255, 255, 255, 0.8);
+border-color: rgba(255, 255, 255, 0.8);
+font-size: 32px;
+padding: 24px;
+font-family: "UI", sans-serif;
+width: 300px;
+}
+
+#namecardbg {
+width: 512px;
+height: 270px;
+background-image: radial-gradient(#AAA, #888);
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+}
+
+@keyframes namedisplayanim {
+0% {padding-top: 120px; color: rgba (255, 255, 255, 0);}
+100% {padding-top: 80px; color: rgba (255, 255, 255, 0.8);}
+}
+#namedisplay {
+color: rgba(255, 255, 255, 0.8);
+font-family: "Handwritten", cursive;
+font-style: italic;
+font-size: 72px;
+transform: rotate(-6deg);
+padding-top: 80px;
+animation-name: namedisplayanim;
+animation-duration: 0.5s;
+}
+
